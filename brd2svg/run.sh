@@ -1,9 +1,11 @@
 #!/bin/bash
 
 # Location of EAGLE executable:
-EXEC=/Applications/EAGLE-7.3.0/EAGLE.app/Contents/MacOS/EAGLE
+#EXEC=/Applications/EAGLE-7.3.0/EAGLE.app/Contents/MacOS/EAGLE
+export LD_LIBRARY_PATH=/home/kjell/eagle-7.3.0/
+EXEC=/home/kjell/eagle-7.3.0/bin/eagle
 # Default brd2svg working path (override by passing argument to this script):
-WORKPATH=~/Desktop/FritzingTest
+WORKPATH=~/Documents/Fritzing/kameleon-board/e2f
 # Other paths used by brd2svg:
 # PARTPATH and ANDPATH are relative to brd2svg application.
 # BACKUPPATH is relative to 'brds' directory in WORKPATH.
